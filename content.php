@@ -4,6 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>Овернульч. Divided by Zero. United as One.</title>
+	
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?= $old_base_URL ?>/fav/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?= $old_base_URL ?>/fav/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?= $old_base_URL ?>/fav/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?= $old_base_URL ?>/fav/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?= $old_base_URL ?>/fav/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?= $old_base_URL ?>/fav/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="<?= $old_base_URL ?>/fav/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="<?= $old_base_URL ?>/fav/favicon-16x16.png" sizes="16x16" />
+	<meta name="application-name" content="Овернульч"/>
+	<meta name="msapplication-TileColor" content="#000000" />
+	<meta name="msapplication-TileImage" content="<?= $old_base_URL ?>/fav/mstile-144x144.png" />
+	<link rel="stylesheet" href="css/carcass.css">
+
 	<link rel="stylesheet" href="hxv.css">
 	<link rel="stylesheet" href="cells-10.css">
 	<script src="dom-utils.js"></script>
