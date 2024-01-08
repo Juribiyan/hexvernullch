@@ -7,6 +7,7 @@ require ROOTDIR.'overnullch-config.php';
 $tc_db->SetFetchMode(ADODB_FETCH_ASSOC);
 $tc_db->Execute('SET NAMES utf8');
 $db = 'over_chans';
+$old_base_URL = 'http://old.0chan.one';
 
 if (isset($_GET['click'])) {
   $tc_db->Execute("UPDATE $db SET clicks = clicks+1 WHERE url=?", [$_GET['click']]);
@@ -35,12 +36,14 @@ function makeIcon($id) {
 }
 
 function chanHTML($chan) {
-  $img_src = "/chans/balls/" 
+  global $old_base_URL;
+
+  $img_src = "$old_base_URL/chans/balls/" 
   . ($chan['offline'] ? 'offline' : (
     $chan['default'] ? 'default' : 'custom' ) )
   . "/" . $chan['id'] . ".png"
   . ($chan['ballv'] ? "?uid=" . $chan['ballv'] : "");
-// 
+
   $a_href = "./?click=" . $chan['url'];
 
   $search = mb_strtolower($chan['name'] . ' ' . preg_replace('/^https?\:\/\//', '', $chan['url']));

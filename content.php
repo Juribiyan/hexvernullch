@@ -26,7 +26,7 @@
 				<input type="text" name="q" <?= ($search ? "value=\"$q\"" : '') ?>>
 			</form>
 		<?= ($search ? '</a>'	: '</label>' ) ?>
-		<a target="_blank" href="/catalog" class="cell menu-cell" id="c-catalog" title="Каталог">
+		<a target="_blank" href="<?= $old_base_URL ?>/catalog" class="cell menu-cell" id="c-catalog" title="Каталог">
 			<div class="cell-bg"></div>
 			<?= makeIcon('catalog') ?>
 		</a>
@@ -38,11 +38,11 @@
 			<div class="cell-bg"></div>
 			<?= makeIcon('skull') ?>
 		</label>
-		<a target="_blank" href="/editor" class="cell menu-cell" id="c-editor" title="Редактор">
+		<a target="_blank" href="<?= $old_base_URL ?>/editor" class="cell menu-cell" id="c-editor" title="Редактор">
 			<div class="cell-bg"></div>
 			<?= makeIcon('pencil') ?>
 		</a>
-		<a target="_blank" href="/" class="cell menu-cell" id="c-home" title="Старая домашняя страница">
+		<a target="_blank" href="<?= $old_base_URL ?>/" class="cell menu-cell" id="c-home" title="Старая домашняя страница">
 			<div class="cell-bg"></div>
 			<?= makeIcon('home') ?>
 		</a>
