@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<title>Cell Test</title>
+	<title>Овернульч. Divided by Zero. United as One.</title>
 	<link rel="stylesheet" href="hxv.css">
 	<link rel="stylesheet" href="cells-10.css">
 	<script src="dom-utils.js"></script>
